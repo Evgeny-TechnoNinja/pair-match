@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Pair Match.exe" version="1.0.0.1" publicKeyToken="28db6cc73655ac23" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Pair Match" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Pair Match.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="662528">
+      <assemblyIdentity name="Newtonsoft.Json" version="11.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Yw3T/yq5ONtdA2Q+/f+cNCrtzKM2a86CntwgD6ZS6Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pair Match.exe" size="760800">
+      <assemblyIdentity name="Pair Match" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JZLqG+j2uKQg9wKBPRei63B39PBrWjAMgF59rUA7FRM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="icon.ico" size="97943">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MdML92AmaY/6OV6Sy8MwCbEwu044IJd155DclsEPWCA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pair Match.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-RU45EJ4\bianc" issuerKeyHash="d99967dcfd1908639a3c73aac2aca50782860e09" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0jpwHiuo/iCEt5/ilbE5yxLVTfCKfZGrnrymQx21zDc=</DigestValue></Reference></SignedInfo><SignatureValue>qOcih6CPbSdfzU3k4bQI9ZWEGO2e9x1vMxOhPvhkWNgDH2eJiAa0TFP8UmDJ710qzeOePwUzpAOnrkijIy+04sg/VscJJnzEZIAO7a3WGSDMRjZ1Ag/9HbCJCEcmj5iCGWdohXay1N/PDgB4ZlFvxNGTwDo0Sj7eas5P+4Fv+zA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zlt/HETxA615LeOw9WOHRWngELoQwU0LdTcPsk769FlruWFN58p5L8y8S84JklabwmTIeTNHCZbU96478HUcK30usVngLj3/5RiZqq8vvfZdq38twGABo9jPtwuCs8DkeQbGtz1tgearYuTzsil3VEcaiOdcX4HSOnlX+D/PpJE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="37ccb51d43a6bc9eab917d8af04dd512cb39b195e29fb78420fea82b1e703ad2" Description="" Url=""><as:assemblyIdentity name="Pair Match.exe" version="1.0.0.1" publicKeyToken="28db6cc73655ac23" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-RU45EJ4\bianc</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l/gpSdvPYPdNllUFxIMcNW/DcgIUdqrfskfjelVEbzI=</DigestValue></Reference></SignedInfo><SignatureValue>d6pKJSq+SQpbUhiXzRtIwRO5sWm4ZQib45lrCkJ0sPELa896qSOTRuPZDP8MlQBjkqN0JqLwlS/FsQ1RGaAowpOydvByXfbKMgLtdC7mZwhTW5Vcts1WjJ46AABuq6AH2WHzFmMybAgCpgD94LG0a11VE+UHd8GWiIN7OHW+jxI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zlt/HETxA615LeOw9WOHRWngELoQwU0LdTcPsk769FlruWFN58p5L8y8S84JklabwmTIeTNHCZbU96478HUcK30usVngLj3/5RiZqq8vvfZdq38twGABo9jPtwuCs8DkeQbGtz1tgearYuTzsil3VEcaiOdcX4HSOnlX+D/PpJE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQMjrN0OLByZtGVTWvFXaBoDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFIAVQA0ADUARQBKADQAXABiAGkAYQBuAGMwHhcNMTgwNzI2MTIwNDM3WhcNMTkwNzI2MTgwNDM3WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFIAVQA0ADUARQBKADQAXABiAGkAYQBuAGMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM5bfxxE8QOteS3jsPVjh0Vp4BC6EMFNC3U3D7JO+vRZa7lhTefKeS/MvEvOCZJWm8JkyHkzRwmW1PeuO/B1HCt9LrFZ4C49/+UYmaqvL732Xat/LcBgAaPYz7cLgrPA5HkGxrc9bYHmq2Lk87Ipd1RHGojnXF+B0jp5V/g/z6SRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAmZJaxl6NjKT1KL79vd3rb1Sx++JZmCpDUUH3pjnEmtvW7XlJcnJiD2qXLdLRsJgdpxiQQPnCUABDe81XoMusd+kIHJFtilZApPJ8omehCfZaRMu5AvOVOcGNBgkgdgvlHvupfteUvJ0HMJaKjc5uq7J0MiaLFukSwlrLY5ssAOc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

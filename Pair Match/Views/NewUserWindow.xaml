@@ -1,0 +1,111 @@
+﻿<Window x:Class="PairMatch.Views.NewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PairMatch.ViewModels"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" Topmost="True"
+        Title="New User"
+        Width="330" Height="360" ResizeMode="NoResize"
+        Background="#72AECD" Foreground="White"
+        WindowStyle="ToolWindow" ShowInTaskbar="False">
+
+    <Grid>
+
+        <Ellipse Width="150" Height="150"
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"
+                 Stroke="White" StrokeThickness="3">
+
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="{Binding Avatar}" />
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <Button Name="LeftButton"
+                Width="30" Height="30"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-200,80,0,0"
+                Style="{StaticResource ArrowButtonStyle}"
+                Click="ArrowButton_Click">
+
+            <Image Source="/Resources/left-arrow.png"
+                   Width="30" Height="30"
+                   Margin="-1,0,0,0"/>
+        </Button>
+
+        <Button Name="RightButton"
+                Width="30" Height="30"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="200,80,0,0"
+                Style="{StaticResource ArrowButtonStyle}"
+                Click="ArrowButton_Click">
+
+            <Image Source="/Resources/right-arrow.png"
+                   Width="30" Height="30"
+                   Margin="0,0,-1,0"></Image>
+        </Button>
+
+        <TextBox Name="UsernameTextBox"
+                 Width="200" Height="30"
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,190,0,0"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" Padding="5"
+                 Foreground="Gray" SelectionBrush="#FF72AECD">
+
+            <TextBox.Text>
+                <Binding Path="Username" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <viewModels:UsernameValidationRule ValidationStep="RawProposedValue"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <StackPanel>
+                        <AdornedElementPlaceholder x:Name="UsernameTextBox"/>
+                        <TextBlock Text="{Binding ErrorContent}"
+                                   Width="200" TextWrapping="Wrap"
+                                   Margin="0,5,0,0"
+                                   Foreground="DarkRed"
+                                   Style="{StaticResource TextBlockStyle}"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
+
+        <TextBlock Text="Username" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,197,0,0"
+                   Foreground="DarkGray"
+                   IsHitTestVisible="False">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=UsernameTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Button Content="Create"
+                Width="75" Height="30"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,20"
+                Style="{DynamicResource RoundedButtonStyle}"
+                Click="CreateButton_Click"/>
+
+        <Button Content="Cancel"
+                Width="75" Height="30"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,75,20"
+                Style="{StaticResource RoundedButtonStyle}" Background="#90333C"
+                Click="CancelButton_Click"/>
+
+    </Grid>
+</Window>
