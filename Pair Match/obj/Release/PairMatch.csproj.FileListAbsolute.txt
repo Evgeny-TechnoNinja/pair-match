@@ -1,0 +1,34 @@
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Pair Match.exe.config
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Pair Match.exe.manifest
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Pair Match.application
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Pair Match.exe
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Pair Match.pdb
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Newtonsoft.Json.dll
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\Newtonsoft.Json.xml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\AboutWindow.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\DeleteUserWindow.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\App.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\AboutWindow.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\DeleteUserWindow.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\GameWindow.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\NewUserWindow.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\MainWindow.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\App.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match_MarkupCompile.cache
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match_MarkupCompile.lref
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\GameWindow.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\NewUserWindow.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Views\MainWindow.baml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.g.resources
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\PairMatch.Properties.Resources.resources
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\PairMatch.csproj.GenerateResource.cache
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\PairMatch.csproj.CoreCompileInputs.cache
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.TrustInfo.xml
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.exe.manifest
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.application
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\PairMatch.csproj.CopyComplete
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.exe
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.pdb
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\users.json
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match_Content.g.cs

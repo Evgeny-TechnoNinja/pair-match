@@ -31,8 +31,7 @@ namespace PairMatch.Views
                 new ObservableCollection<UserViewModel>(users as IList<UserViewModel> ?? users.ToList());
 
             _currentUserIndex = currentUserIndex;
-
-            _model = new GameViewModel();
+            
             DataContext = _model;
             
             CardsListView.ItemsSource = _model.GeneratedCards;
@@ -62,9 +61,9 @@ namespace PairMatch.Views
         #region Properties
 
         private readonly ObservableCollection<UserViewModel> _users;
-        private readonly int _currentUserIndex;
+        private readonly int _currentUserIndex = 0;
 
-        private readonly GameViewModel _model;
+        private readonly GameViewModel _model = new GameViewModel();
         
         private int _firstFlippedCardIndex = -1;
         private int _secondFlippedCardIndex = -1;
@@ -72,8 +71,8 @@ namespace PairMatch.Views
         private int _hiddenCardsCount;
         
         private BackgroundWorker _worker;
-        private int _workerCount;
-        private int _workerIndex;
+        private int _workerCount = 0;
+        private int _workerIndex = 0;
 
         private AboutWindow _aboutWindow;
 
