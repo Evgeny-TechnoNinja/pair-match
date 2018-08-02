@@ -32,3 +32,4 @@ E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair 
 E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match.pdb
 E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\bin\Release\users.json
 E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\Pair Match_Content.g.cs
+E:\_Bia's Projects\C#\Visual Programming\Pair Match\Pair Match\obj\Release\PairMatch.csprojResolveAssemblyReference.cache

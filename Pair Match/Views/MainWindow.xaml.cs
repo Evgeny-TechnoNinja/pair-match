@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls.Primitives;
+using System.Windows.Input;
 using PairMatch.ViewModels;
 
 namespace PairMatch.Views
@@ -52,6 +54,21 @@ namespace PairMatch.Views
         #endregion
 
         #region Private Methods
+
+        private void UsersListBox_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            if (e.Delta < 0)
+            {
+                ScrollBar.LineDownCommand.Execute(null, e.OriginalSource as IInputElement);
+            }
+
+            if (e.Delta > 0)
+            {
+                ScrollBar.LineUpCommand.Execute(null, e.OriginalSource as IInputElement);
+            }
+
+            e.Handled = true;
+        }
 
         private void UsersListBox_SelectionChanged(object sender, RoutedEventArgs e)
         {

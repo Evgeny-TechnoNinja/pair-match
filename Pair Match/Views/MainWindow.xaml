@@ -34,8 +34,9 @@
                  HorizontalContentAlignment="Center" Padding="20,5,20,5"
                  Background="#D3BBAA" Foreground="#46519A"
                  BorderBrush="White" BorderThickness="3"
-                 ScrollViewer.VerticalScrollBarVisibility="Auto"
                  ItemContainerStyle="{StaticResource ListBoxItemStyle}"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 PreviewMouseWheel="UsersListBox_PreviewMouseWheel"
                  SelectionMode="Single"
                  SelectionChanged="UsersListBox_SelectionChanged">
 
