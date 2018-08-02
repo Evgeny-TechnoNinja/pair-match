@@ -1,4 +1,4 @@
-# pair-match
+# Pair Match Game
 Desktop application developed in C#, using the Windows Presentation Foundation framework.
 
 It is based on logging in with a user account (no password required) and uses a JSON file for data storage.
