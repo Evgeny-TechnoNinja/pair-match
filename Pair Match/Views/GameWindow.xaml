@@ -393,22 +393,6 @@
                         <Image Source="{Binding FrontImage}" Width="50" Margin="5,5,5,5"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>-->
-
-                <ListView.Resources>
-                    <Style TargetType="{x:Type ScrollBar}">
-                        <Setter Property="Background" Value="Transparent"/>
-                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type ScrollBar}">
-                                    <Grid x:Name="Bg" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
-                                        <Border Width="3" Background="White" HorizontalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ListView.Resources>
             </ListView>
 
             <Label Name="GameOverLabel"
@@ -487,22 +471,6 @@
                    FontWeight="Bold"/>
 
             <ScrollViewer Margin="0,50,-20,0" VerticalScrollBarVisibility="Auto">
-                <ScrollViewer.Resources>
-                    <Style TargetType="{x:Type ScrollBar}">
-                        <Setter Property="Background" Value="Transparent"/>
-                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type ScrollBar}">
-                                    <Grid x:Name="Bg" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
-                                        <Border Width="3" Background="White" HorizontalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ScrollViewer.Resources>
-                
                 <ItemsControl Name="StatisticsItemsControl">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate DataType="viewModels:UserViewModel">
